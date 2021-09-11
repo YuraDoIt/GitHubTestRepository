@@ -8,9 +8,22 @@
 
     <style>
 
-        .name{
+        #name{
             text-align : center;
         }
+
+        .Row{
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border-spacing: 10px;
+        }
+        .Column{
+            display: table-cell;
+            text-align: center;
+        }
+
+
     </style>
 
 </head>
@@ -20,19 +33,27 @@
         <p style="text-align: center;">Shop</p>
     </h2>
 
-    <div>
-        <div>
-            <form action="">
+    <div class="Row">
+        <div class="Column">
+            <form action="post">
 
                 <input type="radio" id = "cild" name="age" value="age">
-
+                12-18 years<br>
                 <input type="radio" id = "adult" name="age" value = "age">
+                20-28<br>
+                <input type="radio" id = "old" name="age" value = "age">
+                >28<br>
 
             </form>
         </div>
 
-        <div></div>
-        <div></div>
+        <div class="Column" id="colMiddle">
+            <img src="https://cdn.motor1.com/images/mgl/01yvV/s1/4x3/lamborghini-sc20.webp" alt="lamba" height="200px" width="250px">
+        </div>
+
+        <div class="Column">
+            <p>This is main text for this page </p>
+        </div>
     </div>
 </body>
 </html>
